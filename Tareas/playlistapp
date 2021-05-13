@@ -45,3 +45,68 @@ export function CancionV (props) {
       </div>
     )
 }
+
+
+
+
+import './App.css';
+import Cancion, {CancionV} from "./Componentes/Cancion"
+
+function App() {
+
+const v_titulo= "Importante";
+const v_duracion= 5;
+const v_album= "Realidades"; 
+const v_numero= 3;
+const v_fechacreacion= "5 De Junio 1970"
+
+const canciones = {
+  titulo: "Felicidad", 
+  duracion: 5,
+  album: "Caminos", 
+  numero: 7,
+  fechacreacion: "07 de mayo 1999"
+};
+
+const f_saludar= (props) => {
+  alert("La Cancion Seleccionada Es "+props);
+}
+
+
+  return (
+    <div className="App">
+      <header className="App-header">
+          <p>
+           Canciones
+        </p>
+        <Cancion2 Ccan={canciones}
+        fnsaludar= {f_saludar}
+        />
+
+<Cancion 
+        
+        titulo= {v_titulo} 
+        duracion= {v_duracion} 
+        album= {v_album}
+        numero= {v_numero}
+        fechacreacion= {v_fechacreacion}
+        fnsaludar= {f_saludar}
+         />
+
+<Cancion 
+        
+        titulo=" Casualidades" 
+        duracion="6" 
+        album="Real" 
+        numero="6" 
+        fechacreacion="08 de noviembre de 2000"
+        fnsaludar= {f_saludar}
+        
+        />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
