@@ -56,7 +56,7 @@ setEntrada(0);
         
 
          ></Button>
-         <Text style={miEstilos.sectionDescription}>Entrada: {entrada}</Text>
+         
          <Text style={miEstilos.sectionDescription}>Conversion: {conversion}</Text>
         </View>
         
